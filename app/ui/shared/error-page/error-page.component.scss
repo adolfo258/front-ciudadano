@@ -1,0 +1,46 @@
+@import '../../../../scss/variables';
+
+.error {
+    font-family: $roboto;
+    margin: 5rem 0 0 0;
+
+    .contact-info {
+        margin-top: rem(40);
+        padding-top: rem(27);
+        border-top: 1px solid #e2e2e2;
+
+        &__link {
+            font-weight: 300;
+            font-size: rem(14);
+            line-height: rem(16);
+
+            &:first-of-type {
+                margin-right: 18px;
+            }
+        }
+    }
+
+    &__svg {
+        background-size: contain;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+
+    &--500 {
+        .error__svg {
+            background-image: url(../../../../assets/images/error-500.svg);
+        }
+    }
+
+    &--404 {
+        .error__svg {
+            background-image: url(../../../../assets/images/error-500.svg);
+        }
+    }
+
+    &--504 {
+        .error__svg {
+            background-image: url(../../../../assets/images/error-500.svg);
+        }
+    }
+}

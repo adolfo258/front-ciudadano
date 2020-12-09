@@ -1,0 +1,63 @@
+<div class="container">
+    <div class="card">
+        <div class="row">
+            <div class="col">
+                <h1 class="h6 bg-light p-3 font-weight-normal text-primary">
+                    Incremento por CUIL - CUIT
+                </h1>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <form action="" class="p-3">
+                    <div class="row">
+                        <div class="col-xs-12 col-lg-6">
+                            <div class="form-group ">
+                                <label for="mount">CUIL - CUIT</label>
+                                <input
+                                    required
+                                    id="mount"
+                                    type="text"
+                                    class="form-control"
+                                    placeholder="CUIL - CUIT"
+                                    #cuil
+                                    (keyup)="validCuild(cuil.value)"
+                                    [ngClass]="isValedCuil ? '' : 'is-invalid'"
+                                />
+                            </div>
+                        </div>
+                        <div class="col-xs-12 col-lg-6">
+                            <div class="form-group ">
+                                <label for="destination">Tipo de crédito</label>
+                                <select required class="form-control">
+                                    <option disabled selected>Tipo de crédito</option>
+                                    <option>Credit #1</option>
+                                    <option>Credit #2</option>
+                                    <option>Credit #3</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-xs-12 col-lg-6">
+                            <div class="form-group">
+                                <label for="detail">Cantidad de créditos</label>
+                                <input required type="number" class="form-control" placeholder="Cantidad de créditos" />
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row justify-content-center justify-content-lg-end">
+                        <div class="col-8 col-lg-3">
+                            <button
+                                class="btn btn-primary btn-block rounded-pill"
+                                [disabled]="isValedCuil ? false : true"
+                            >
+                                Enviar
+                            </button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>

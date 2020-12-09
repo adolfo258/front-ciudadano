@@ -1,0 +1,54 @@
+@import 'node_modules/kolektor-bootstrap/dist/scss/global.scss';
+@import '../../scss/variables';
+
+.main-container {
+    margin: 0 auto;
+    min-height: 600px;
+    margin-top: 8rem;
+
+    @media screen and (min-width: 320px) and (max-width: 425px) {
+        margin-top: 8rem;
+    }
+}
+
+.header-wrapper {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    max-height: 102px;
+    z-index: 999;
+}
+
+$darker-navy: #29343e;
+
+//loader
+.app-loader__container {
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 999;
+    background: rgba(000, 000, 000, 0.7);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    .app-loader__container--text {
+        color: #ffffff;
+        font-size: 16px;
+        font-weight: 300;
+        margin-top: 15px;
+    }
+
+    .spinner-border {
+        width: 5rem;
+        height: 5rem;
+    }
+}
+
+//  Varaibles from global.scss are available.
+h1 {
+    color: $CBA_Orage;
+}

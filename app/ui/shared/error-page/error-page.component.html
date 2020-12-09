@@ -1,0 +1,132 @@
+<ng-container [ngSwitch]="errorType">
+    <div class="error d-flex error--500" *ngSwitchCase="500">
+        <div class="error__text">
+            <h1 class="error__title">¡Algo pasó!</h1>
+            <p class="error__description">La página que estas buscando no está disponible en este momento.</p>
+            <p class="error__description">
+                Nuestro equipo de servidores esta resolviendo el inconveniente, visitanos más tarde.
+            </p>
+
+            <div class="error__cta d-flex">
+                <a href="/inicio/" class="button -lightblue">Ir al inicio</a>
+            </div>
+
+            <div class="contact-info">
+                <p>Si necesitas ayuda, comunicate</p>
+                <div class="d-flex">
+                    <a class="contact-info__link">
+                        <svg width="13" height="13" viewBox="0 0 13 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M2.9155 1L1.20871 2.45061L1.19036 2.46897C0.456259 3.20345 1.90611 5.86595 4.49382 8.45501C7.06317 11.0257 9.7977 12.5498 10.5318 11.8153L10.5502 11.7969L12 10.0892L9.37559 7.94087L7.70551 9.13441L3.88818 5.31509L5.0811 3.64414L2.9155 1Z"
+                                stroke="#A6A6A6"
+                                stroke-width="0.8"
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                            />
+                        </svg>
+                        0 800 444 8008
+                    </a>
+                    <a href="https://www.facebook.com/rentascba/" target="_blank" class="contact-info__link">
+                        <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M13.125 2.21875C13.125 1.83789 12.9785 1.51562 12.7148 1.22266C12.4219 0.958984 12.0996 0.8125 11.7188 0.8125H1.40625C0.996094 0.8125 0.673828 0.958984 0.410156 1.22266C0.117188 1.51562 0 1.83789 0 2.21875V12.5312C0 12.9414 0.117188 13.2637 0.410156 13.5273C0.673828 13.8203 0.996094 13.9375 1.40625 13.9375H7.17773V8.75195H5.39062V6.75977H7.17773V5.29492C7.17773 4.47461 7.38281 3.85938 7.85156 3.39062C8.32031 2.92188 8.93555 2.6875 9.72656 2.6875C10.3125 2.6875 10.8398 2.7168 11.25 2.77539V4.5332H10.1953C9.81445 4.5332 9.55078 4.62109 9.4043 4.79688C9.28711 4.97266 9.22852 5.20703 9.22852 5.5V6.75977H11.25L10.9863 8.75195H9.22852V13.9375H11.7188C12.0996 13.9375 12.4219 13.8203 12.7148 13.5273C12.9785 13.2637 13.125 12.9414 13.125 12.5312V2.21875Z"
+                                fill="#CBCBCB"
+                            />
+                        </svg>
+                        Rentas Córdoba
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="error__svg"></div>
+    </div>
+
+    <div class="error d-flex error--404" *ngSwitchCase="404">
+        <div class="error__text">
+            <h1 class="error__title">Lo sentimos</h1>
+            <p class="error__description">No pudimos encontrar la página que buscas.</p>
+            <p class="error__description">
+                Podes volver a nuestra página de inicio o buscar en los enlaces destacados para encontrar lo que
+                necesitas.
+            </p>
+
+            <div class="error__cta d-flex">
+                <a href="/inicio/" class="button -lightblue">Ir al inicio</a>
+            </div>
+
+            <div class="contact-info">
+                <p>Si necesitas ayuda, comunicate</p>
+                <div class="d-flex">
+                    <a class="contact-info__link">
+                        <svg width="13" height="13" viewBox="0 0 13 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M2.9155 1L1.20871 2.45061L1.19036 2.46897C0.456259 3.20345 1.90611 5.86595 4.49382 8.45501C7.06317 11.0257 9.7977 12.5498 10.5318 11.8153L10.5502 11.7969L12 10.0892L9.37559 7.94087L7.70551 9.13441L3.88818 5.31509L5.0811 3.64414L2.9155 1Z"
+                                stroke="#A6A6A6"
+                                stroke-width="0.8"
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                            />
+                        </svg>
+                        0 800 444 8008
+                    </a>
+                    <a href="https://www.facebook.com/rentascba/" target="_blank" class="contact-info__link">
+                        <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M13.125 2.21875C13.125 1.83789 12.9785 1.51562 12.7148 1.22266C12.4219 0.958984 12.0996 0.8125 11.7188 0.8125H1.40625C0.996094 0.8125 0.673828 0.958984 0.410156 1.22266C0.117188 1.51562 0 1.83789 0 2.21875V12.5312C0 12.9414 0.117188 13.2637 0.410156 13.5273C0.673828 13.8203 0.996094 13.9375 1.40625 13.9375H7.17773V8.75195H5.39062V6.75977H7.17773V5.29492C7.17773 4.47461 7.38281 3.85938 7.85156 3.39062C8.32031 2.92188 8.93555 2.6875 9.72656 2.6875C10.3125 2.6875 10.8398 2.7168 11.25 2.77539V4.5332H10.1953C9.81445 4.5332 9.55078 4.62109 9.4043 4.79688C9.28711 4.97266 9.22852 5.20703 9.22852 5.5V6.75977H11.25L10.9863 8.75195H9.22852V13.9375H11.7188C12.0996 13.9375 12.4219 13.8203 12.7148 13.5273C12.9785 13.2637 13.125 12.9414 13.125 12.5312V2.21875Z"
+                                fill="#CBCBCB"
+                            />
+                        </svg>
+                        Rentas Córdoba
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="error__svg"></div>
+    </div>
+
+    <div class="error error--500" *ngSwitchCase="504">
+        <div class="row">
+            <div class="col-lg-6">
+                <h4 class="h4">Parece que hay un error</h4>
+                <p>El servidor no está respondiendo como nos gustaría.</p>
+                <p class="font-weight-light">
+                    Podes actualizar la página para ver si resuelve el inconveniente o volver a nuestra página de
+                    inicio.
+                </p>
+                <div class="mt-5">
+                    <a href="#" class="btn btn-link">Reintentar</a>
+                    <a href="/inicio/" class="ml-4 button--outline">Ir al inicio</a>
+                </div>
+
+                <div class="contact-info">
+                    <p>Si necesitas ayuda, comunicate</p>
+                    <div class="d-flex">
+                        <a class="contact-info__link">
+                            <svg
+                                width="13"
+                                height="13"
+                                viewBox="0 0 13 13"
+                                fill="none"
+                                xmlns="http://www.w3.org/2000/svg"
+                            >
+                                <path
+                                    d="M2.9155 1L1.20871 2.45061L1.19036 2.46897C0.456259 3.20345 1.90611 5.86595 4.49382 8.45501C7.06317 11.0257 9.7977 12.5498 10.5318 11.8153L10.5502 11.7969L12 10.0892L9.37559 7.94087L7.70551 9.13441L3.88818 5.31509L5.0811 3.64414L2.9155 1Z"
+                                    stroke="#A6A6A6"
+                                    stroke-width="0.8"
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                />
+                            </svg>
+                            0 800 444 8008
+                        </a>
+                        <a href="https://www.facebook.com/rentascba/" target="_blank" class="contact-info__link">
+                            <i class="icon-facebook"></i>
+                            Rentas Córdoba
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6 error__svg"></div>
+        </div>
+    </div>
+</ng-container>
